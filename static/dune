@@ -1,4 +1,0 @@
-(rule
- (alias server)
- (deps (glob_files_rec ./css/*.css))
- (action (copy ../web/app.js app.js)))

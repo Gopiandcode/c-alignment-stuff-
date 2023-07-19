@@ -1,9 +1,0 @@
-(executable
- (name app)
- (libraries bonsai bonsai.web)
- (modes js))
-
-(rule
- (alias server)
- (deps app.bc.js)
- (action (copy app.bc.js app.js)))
