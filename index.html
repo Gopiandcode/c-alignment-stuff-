@@ -7,10 +7,56 @@
     <title>C program tracing</title>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
   </head>
   <body>
-    <div id="app">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand">C-alignment</a></div>
+            <div><ul class="nav navbar-nav"><li><a>Home</a></li></div>
+        </div>
     </div>
+    <div class="starter-template">
+        <div class="container">
+            <h1>C-alignment tool</h1>
+            <p class="lead">Automatic alignment between a program and a reference implementation</p>
+            <div class="row">
+                <div class="col-sm-6 program-box runnner">
+                    <div id="target-program" class="code">
+                    </div>
+                    <button id="run-code" class="run-button">▶</button>
+                </div>
+                <div class="col-sm-6 program-box">
+                    <div id="reference-program" class="code">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="lead">Definitions</p>
+                <div class="row">
+                <div class="program-box col-sm-12">
+                    <div id="definitions-program" class="code">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="lead">Result</p>
+                <div class="row">
+                    <div class="program-box col-sm-12">
+                        <pre><code id="response-box" class="code">
+                        </code></pre>
+                    </pre>
+                </div>
+        </div>
+    </div>
+
+    <script src="/static/js/ace.js"></script>
+    <script src="/static/js/npm.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
     <script src="/static/app.js"></script>
   </body>
 </html>

@@ -1,4 +1,8 @@
 (rule
  (alias server)
- (deps (glob_files_rec ./css/*.css))
- (action (copy ../web/app.js app.js)))
+ (deps
+  (glob_files_rec ./css/*.css)
+  (glob_files_rec ./js/*.js)
+  (glob_files_rec ./fonts/*.ttf))
+ (action
+  (copy ../web/app.js app.js)))

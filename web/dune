@@ -1,6 +1,6 @@
 (executable
  (name app)
- (libraries bonsai bonsai.web)
+ (libraries brr yojson)
  (modes js))
 
 (rule
